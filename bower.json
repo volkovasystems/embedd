@@ -1,0 +1,31 @@
+{
+  "name": "embedd",
+  "version": "0.0.0",
+  "description": "Check if identity is embedded.",
+  "main": "embedd.deploy.js",
+  "support": "embedd.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "check",
+    "identity",
+    "embedded",
+    "embedd"
+  ],
+  "homepage": "https://github.com/volkovasystems/embedd",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "eqe": "^0.3.0",
+    "falzy": "^0.20.0",
+    "idntty": "^0.3.0",
+    "stringe": "^0.4.0"
+  }
+}
