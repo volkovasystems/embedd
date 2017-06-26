@@ -1,8 +1,31 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./embedd.deploy.js">
-		</script>
+		<title>embedd unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./embedd.deploy.js"></script>
+
+		<script type="application/javascript" src="./bower_components/idntty/idntty.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "embedd unit test", function( assert ) {
+
+				let data = { };
+				let identity = idntty( data ).toString( );
+
+				assert.equal( embedd( data, `${ identity }:test` ), true, "should be true" );
+
+			} );
+		</script>
+	</body>
 </html>

@@ -1,6 +1,6 @@
 {
   "name": "embedd",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Check if identity is embedded.",
   "main": "embedd.js",
   "support": "embedd.support.js",
@@ -21,6 +21,10 @@
     "embedd"
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "contributors": [
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/volkovasystems/embedd/issues"
