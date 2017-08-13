@@ -6,6 +6,6 @@ const idntty = require( "idntty" );
 let data = { };
 let identity = idntty( data ).toString( );
 
-assert.equal( embedd( data, `${ identity }:test` ), true, "should be true" );
+assert.equal( embedd( data, `${ identity }:test` ), true, "should be equal to true" );
 
 console.log( "ok" );
