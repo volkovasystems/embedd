@@ -1,6 +1,6 @@
 {
   "name": "embedd",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Check if identity is embedded.",
   "main": "embedd.deploy.js",
   "support": "embedd.support.js",
@@ -25,9 +25,9 @@
     "tests"
   ],
   "dependencies": {
-    "eqe": "^0.3.0",
-    "falzy": "^0.20.0",
-    "idntty": "^0.3.0",
-    "stringe": "^0.4.0"
+    "eqe": "^0.5.0",
+    "falzy": "^0.23.0",
+    "idntty": "^0.4.0",
+    "stringe": "^0.5.0"
   }
 }
