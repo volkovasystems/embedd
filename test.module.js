@@ -55,6 +55,7 @@ const assert = require( "should" );
 
 //: @server:
 const embedd = require( "./embedd.js" );
+const idntty = require( "idntty" );
 //: @end-server
 
 //: @client:
@@ -70,6 +71,17 @@ const path = require( "path" );
 
 describe( "embedd", ( ) => {
 
+	describe( "`embedd with Symbol type entity and string type value`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			let data = { };
+			let identity = idntty( data ).toString( );
+
+			assert.equal( embedd( data, `${ identity }:test` ), true );
+
+		} );
+	} );
+
 } );
 
 //: @end-server
@@ -78,6 +90,18 @@ describe( "embedd", ( ) => {
 //: @client:
 
 describe( "embedd", ( ) => {
+
+	describe( "`embedd with Symbol type entity and string type value`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			let data = { };
+			let identity = idntty( data ).toString( );
+
+			assert.equal( embedd( data, `${ identity }:test` ), true );
+
+		} );
+	} );
+
 } );
 
 //: @end-client
@@ -86,6 +110,30 @@ describe( "embedd", ( ) => {
 //: @bridge:
 
 describe( "embedd", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`embedd with Symbol type entity and string type value`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					let data = { };
+					let identity = idntty( data ).toString( );
+
+					return embedd( data, `${ identity }:test` );
+
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
 } );
 
 //: @end-bridge
