@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-17T10:33:15.195Z",
+	"end": "2017-08-17T10:33:55.513Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "embedd",
+			"duration": 0,
+			"start": "2017-08-17T10:33:53.754Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "embedd",
+			"duration": 1581,
+			"start": "2017-08-17T10:33:53.755Z",
+			"end": "2017-08-17T10:33:55.336Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-17T10:33:53.756Z",
+					"end": "2017-08-17T10:33:53.756Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "embedd",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-17T10:33:55.335Z",
+					"end": "2017-08-17T10:33:55.336Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "embedd",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-17T10:33:55.337Z",
+					"end": "2017-08-17T10:33:55.337Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "embedd"
+				}
+			]
+		},
+		{
+			"name": "`embedd with Symbol type entity and string type value`",
+			"duration": 1581,
+			"start": "2017-08-17T10:33:53.755Z",
+			"end": "2017-08-17T10:33:55.336Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-17T10:33:53.756Z",
+					"end": "2017-08-17T10:33:55.335Z",
+					"duration": 1579,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

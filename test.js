@@ -55,6 +55,7 @@ const assert = require( "should" );
 
 //: @server:
 const embedd = require( "./embedd.js" );
+const idntty = require( "idntty" );
 //: @end-server
 
 
@@ -65,6 +66,17 @@ const embedd = require( "./embedd.js" );
 //: @server:
 
 describe( "embedd", ( ) => {
+
+	describe( "`embedd with Symbol type entity and string type value`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			let data = { };
+			let identity = idntty( data ).toString( );
+
+			assert.equal( embedd( data, `${ identity }:test` ), true );
+
+		} );
+	} );
 
 } );
 

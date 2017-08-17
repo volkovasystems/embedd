@@ -1,16 +1,32 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-16T11:26:48.303Z",
-    "end": "2017-08-16T11:26:48.304Z",
-    "duration": 1
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-17T10:33:14.069Z",
+		"end": "2017-08-17T10:33:14.078Z",
+		"duration": 9
+	},
+	"tests": [
+		{
+			"title": "should be equal to true",
+			"fullTitle": "embedd `embedd with Symbol type entity and string type value` should be equal to true",
+			"duration": 5,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to true",
+			"fullTitle": "embedd `embedd with Symbol type entity and string type value` should be equal to true",
+			"duration": 5,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }
