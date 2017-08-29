@@ -5,15 +5,15 @@
 		"passes": 1,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-17T10:33:14.069Z",
-		"end": "2017-08-17T10:33:14.078Z",
-		"duration": 9
+		"start": "2017-08-29T09:57:14.852Z",
+		"end": "2017-08-29T09:57:14.863Z",
+		"duration": 11
 	},
 	"tests": [
 		{
 			"title": "should be equal to true",
 			"fullTitle": "embedd `embedd with Symbol type entity and string type value` should be equal to true",
-			"duration": 5,
+			"duration": 6,
 			"currentRetry": 0,
 			"err": {}
 		}
@@ -24,7 +24,7 @@
 		{
 			"title": "should be equal to true",
 			"fullTitle": "embedd `embedd with Symbol type entity and string type value` should be equal to true",
-			"duration": 5,
+			"duration": 6,
 			"currentRetry": 0,
 			"err": {}
 		}
