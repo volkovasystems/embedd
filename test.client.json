@@ -1,11 +1,11 @@
 {
 	"state": {
-		"passed": 1,
+		"passed": 2,
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-29T09:57:16.243Z",
-	"end": "2017-08-29T09:57:55.558Z",
+	"start": "2017-09-22T04:58:24.786Z",
+	"end": "2017-09-22T04:59:04.488Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,36 +28,52 @@
 		{
 			"name": "embedd",
 			"duration": 0,
-			"start": "2017-08-29T09:57:51.989Z",
+			"start": "2017-09-22T04:59:03.368Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "embedd",
-			"duration": 3390,
-			"start": "2017-08-29T09:57:51.990Z",
-			"end": "2017-08-29T09:57:55.380Z",
+			"duration": 942,
+			"start": "2017-09-22T04:59:03.369Z",
+			"end": "2017-09-22T04:59:04.311Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-29T09:57:51.992Z",
-					"end": "2017-08-29T09:57:51.992Z",
+					"start": "2017-09-22T04:59:03.370Z",
+					"end": "2017-09-22T04:59:03.370Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "embedd",
 					"associatedTest": "should be equal to true"
 				},
 				{
-					"start": "2017-08-29T09:57:55.378Z",
-					"end": "2017-08-29T09:57:55.379Z",
-					"duration": 1,
+					"start": "2017-09-22T04:59:04.235Z",
+					"end": "2017-09-22T04:59:04.235Z",
+					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "embedd",
 					"associatedTest": "should be equal to true"
 				},
 				{
-					"start": "2017-08-29T09:57:55.380Z",
-					"end": "2017-08-29T09:57:55.380Z",
+					"start": "2017-09-22T04:59:04.236Z",
+					"end": "2017-09-22T04:59:04.236Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "embedd",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-22T04:59:04.311Z",
+					"end": "2017-09-22T04:59:04.311Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "embedd",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-22T04:59:04.311Z",
+					"end": "2017-09-22T04:59:04.311Z",
 					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "embedd"
@@ -66,15 +82,31 @@
 		},
 		{
 			"name": "`embedd with Symbol type entity and string type value`",
-			"duration": 3389,
-			"start": "2017-08-29T09:57:51.991Z",
-			"end": "2017-08-29T09:57:55.380Z",
+			"duration": 867,
+			"start": "2017-09-22T04:59:03.369Z",
+			"end": "2017-09-22T04:59:04.236Z",
 			"tests": [
 				{
 					"name": "should be equal to true",
-					"start": "2017-08-29T09:57:51.991Z",
-					"end": "2017-08-29T09:57:55.378Z",
-					"duration": 3387,
+					"start": "2017-09-22T04:59:03.370Z",
+					"end": "2017-09-22T04:59:04.234Z",
+					"duration": 864,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`embedd with function type entity and symbol type value`",
+			"duration": 75,
+			"start": "2017-09-22T04:59:04.236Z",
+			"end": "2017-09-22T04:59:04.311Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-09-22T04:59:04.236Z",
+					"end": "2017-09-22T04:59:04.311Z",
+					"duration": 75,
 					"state": "pass"
 				}
 			],

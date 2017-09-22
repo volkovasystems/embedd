@@ -1,19 +1,26 @@
 {
 	"stats": {
-		"suites": 2,
-		"tests": 1,
-		"passes": 1,
+		"suites": 3,
+		"tests": 2,
+		"passes": 2,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-29T09:57:14.852Z",
-		"end": "2017-08-29T09:57:14.863Z",
-		"duration": 11
+		"start": "2017-09-22T04:58:23.670Z",
+		"end": "2017-09-22T04:58:23.679Z",
+		"duration": 9
 	},
 	"tests": [
 		{
 			"title": "should be equal to true",
 			"fullTitle": "embedd `embedd with Symbol type entity and string type value` should be equal to true",
-			"duration": 6,
+			"duration": 4,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to true",
+			"fullTitle": "embedd `embedd with function type entity and symbol type value` should be equal to true",
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		}
@@ -24,7 +31,14 @@
 		{
 			"title": "should be equal to true",
 			"fullTitle": "embedd `embedd with Symbol type entity and string type value` should be equal to true",
-			"duration": 6,
+			"duration": 4,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to true",
+			"fullTitle": "embedd `embedd with function type entity and symbol type value` should be equal to true",
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		}

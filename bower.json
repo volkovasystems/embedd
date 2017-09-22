@@ -24,10 +24,13 @@
 		"test",
 		"tests"
 	],
+	"resolutions": {
+		"stringe": "^0.6.0"
+	},
 	"dependencies": {
 		"eqe": "^0.5.0",
 		"falzy": "^0.23.0",
 		"idntty": "^0.4.0",
-		"stringe": "^0.5.0"
+		"stringe": "^0.6.0"
 	}
 }
