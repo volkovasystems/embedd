@@ -45,13 +45,13 @@
 
 	@include:
 		{
-			"assert": "should",
+			"assert": "should/as-function",
 			"embedd": "embedd"
 		}
 	@end-include
 */
 
-const assert = require( "should" );
+const assert = require( "should/as-function" );
 
 //: @server:
 const embedd = require( "./embedd.js" );
@@ -73,11 +73,24 @@ describe( "embedd", ( ) => {
 
 	describe( "`embedd with Symbol type entity and string type value`", ( ) => {
 		it( "should be equal to true", ( ) => {
-
 			let data = { };
 			let identity = idntty( data ).toString( );
 
 			assert.equal( embedd( data, `${ identity }:test` ), true );
+
+		} );
+	} );
+
+	describe( "`embedd with function type entity and symbol type value`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			const ID = Symbol( "id" );
+			const identity = Symbol( "sample-identity" );
+			let source = function Hello( ){ };
+			source[ ID ] = identity;
+
+			let result = embedd( source, identity );
+
+			assert.equal( result, true );
 
 		} );
 	} );
@@ -93,11 +106,24 @@ describe( "embedd", ( ) => {
 
 	describe( "`embedd with Symbol type entity and string type value`", ( ) => {
 		it( "should be equal to true", ( ) => {
-
 			let data = { };
 			let identity = idntty( data ).toString( );
 
 			assert.equal( embedd( data, `${ identity }:test` ), true );
+
+		} );
+	} );
+
+	describe( "`embedd with function type entity and symbol type value`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			const ID = Symbol( "id" );
+			const identity = Symbol( "sample-identity" );
+			let source = function Hello( ){ };
+			source[ ID ] = identity;
+
+			let result = embedd( source, identity );
+
+			assert.equal( result, true );
 
 		} );
 	} );
@@ -115,20 +141,38 @@ describe( "embedd", ( ) => {
 
 	describe( "`embedd with Symbol type entity and string type value`", ( ) => {
 		it( "should be equal to true", ( ) => {
-
 			let result = browser.url( bridgeURL ).execute(
 
 				function( ){
-
 					let data = { };
 					let identity = idntty( data ).toString( );
 
 					return embedd( data, `${ identity }:test` );
-
 				}
 
 			).value;
 
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`embedd with function type entity and symbol type value`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					const ID = Symbol( "id" );
+					const identity = Symbol( "sample-identity" );
+					let source = function Hello( ){ };
+					source[ ID ] = identity;
+
+					return embedd( source, identity );
+				}
+
+			).value;
+			//: @end-ignore
 			assert.equal( result, true );
 
 		} );
